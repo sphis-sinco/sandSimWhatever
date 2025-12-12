@@ -21,6 +21,8 @@ class PlayState extends FlxState
 		add(curPixel);
 
 		curPixel.alpha = 0.5;
+
+		FlxG.mouse.visible = false;
 	}
 
 	override public function update(elapsed:Float)
