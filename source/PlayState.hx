@@ -20,8 +20,6 @@ class PlayState extends FlxState
 		curPixel = new Pixel(SAND);
 		add(curPixel);
 
-		curPixel.alpha = 0.5;
-
 		FlxG.mouse.visible = false;
 	}
 
@@ -63,10 +61,14 @@ class PlayState extends FlxState
 				// nothin
 		}
 
-		if (pixel.x < 0) pixel.x = 0;
-		if (pixel.x > FlxG.width - pixel.width) pixel.x = FlxG.width - pixel.width;
+		if (pixel.x < 0)
+			pixel.x = 0;
+		if (pixel.x > FlxG.width - pixel.width)
+			pixel.x = FlxG.width - pixel.width;
 
-		if (pixel.y < 0) pixel.y = 0;
-		if (pixel.y > FlxG.width - pixel.width) pixel.y = FlxG.width - pixel.width;
+		if (pixel.y < 0)
+			pixel.y = 0;
+		if (pixel.y > FlxG.width - pixel.width)
+			pixel.y = FlxG.width - pixel.width;
 	}
 }
