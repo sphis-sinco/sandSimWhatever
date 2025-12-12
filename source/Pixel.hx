@@ -10,7 +10,7 @@ class Pixel extends FlxSprite
 		super(x, y);
 
         this.material = material;
-		makeGraphic(1, 1, 0xFFFFFF);
+		makeGraphic(4, 4, 0xFFFFFF);
 	}
 
     override function update(elapsed:Float) {
